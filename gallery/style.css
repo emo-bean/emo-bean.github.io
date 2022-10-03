@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    border: 1px solid black;
+    margin: 3px;
+}
+section{
+    border: 1px solid orange;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.featured article{
+    border: 1px dashed lightcoral;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+article img{
+    width:100%;
+}
+.gallery article{
+    flex: 1;
+}
+.featured{
+    display: flex;
+}
+.featured article{
+    flex: 1;
+}
+.featured .wow{
+    flex: 2;
+}
+.gallery .wow{
+    flex: 2;
+}
+.gallery .wowza{
+    flex: 3;
+}
+footer{
+    border: 3px solid rgb(159, 227, 148);
+}
+footer img{
+    height: 100px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    margin: 9px;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    font-size: x-small;
+    margin-top: 11px;
+    margin-left: 4px;
+}
