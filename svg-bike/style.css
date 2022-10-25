@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+svg{
+    width: 40vw;
+}
+#front, #back{
+    animation: wheel 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+#bike{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#head{
+    animation: head 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+@keyframes head{
+    from{
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    to{
+        transform: translateY(40%) rotateZ(20deg);
+    }
+}
